@@ -2,4 +2,4 @@
 # while 1:
 #     print("我爱你")
 #     print("哈哈")
-
+print('hello word')
