@@ -3,3 +3,4 @@
 #     print("我爱你")
 #     print("哈哈")
 print('hello word')
+print(1)
