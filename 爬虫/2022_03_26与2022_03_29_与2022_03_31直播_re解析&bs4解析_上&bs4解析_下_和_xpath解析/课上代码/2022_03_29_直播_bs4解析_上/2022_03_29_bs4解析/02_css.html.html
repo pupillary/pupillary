@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>/* css选择器, 选择页面上的标签. 并给标签添加对应的样式
+        爬虫. 拿到页面源代码之后. 也希望能选择一部分标签. 并提取数据
+        后面. 我们也要用css的选择器来检索你需要的标签.
+        选择器怎么写? 我们的重点
+        所有的标签都有:id(唯一), class(不唯一)
+
+        其他属性不做解释
+     */
+    /*
+    id选择器: 根据id的值. 来选择页面上的元素 id相当于身份证号, 全局唯一
+    #jay {
+        width: 100px;
+        height:100px;
+        background: greenyellow;
+    }
+     */
+
+    /*
+    标签选择器: 根据标签的名字来选择页面上的元素节点
+    span {
+        color: red;
+    }
+    */
+
+    /* 类选择器: 根据class里面的值来选择页面上的标签
+    .abc {
+        background: yellow;
+    }
+    */
+
+    /* 后代选择器: 先找外层选择器的标签. 然后在被选择的标签中继续找内部标签
+    div span{
+        color: red;
+    }
+    */
+
+    /* 子选择器: 先找外层选择器的标签. 然后在被选择的标签中继续找内部标签(一层)
+    div > span > p > span > div > .abc{
+        color: orange;
+    }
+    div > code {
+        color: blue;
+    }
+    */
+
+    /* div > code[jay=qiao]{
+        color:red;
+    }
+     */
+    </style>
+</head>
+<body>
+<!--    <div id="jay"><span>我叫div-周杰伦</span></div>-->
+<!--    <div id="zrf"><p><span>我叫div-周润发</span></p></div>-->
+<!--    <span class="abc">呵呵哒</span>-->
+<!--    <p class="abc">我是p</p>-->
+    <div>
+        <section><span>一样是吃</span></section>
+        <span>一样是吃</span>
+    </div>
+
+    <article>子选择器
+        <strong><span>一样是喝</span></strong>
+        <strong><i><span>一样是喝</span></i></strong>
+    </article>
+
+    <div>属性选择器
+        <code jay="qiao">代码1</code>
+        <code>黄色的数据没用</code>
+        <code jay="qiao">代码2</code>
+        <code>绿色的数据没用</code>
+    </div>
+
+
+</body>
+</html>
