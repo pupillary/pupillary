@@ -1,0 +1,63 @@
+1G  5G
+<video src="5G.mp4">
+
+
+5G => 60分钟
+1080p
+    60个片段
+    m3u8, m3u文件记录着视频切片后的正确的
+    播放顺序
+    M3U8里面放的 =>
+        1.播放的视频片段
+        2.正确的播放顺序
+720p
+
+index.m3u8
+#EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1263000,RESOLUTION=1280x528
+/20211030/89ZfL7VX/hls/index.m3u8
+
+
+index.m3u8
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:4
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-KEY:METHOD=AES-128,URI="https://vo1.123188kk.com/20211030/89ZfL7VX/hls/key.key"
+#EXTINF:2.44,
+https://vo1.123188kk.com/20211030/89ZfL7VX/hls/3YKZ9LsK.ts
+#EXTINF:2,
+https://vo1.123188kk.com/20211030/89ZfL7VX/hls/aJ2kNB1e.ts
+#EXTINF:2,
+https://vo1.123188kk.com/20211030/89ZfL7VX/hls/GcORKlBD.ts
+#EXTINF:2,
+
+3YKZ9LsK.ts
+aJ2kNB1e.ts
+GcORKlBD.ts
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+
+720p
+360p
+
+
+# 整体步骤 => 网吧电影
+1. 想办法找到M3U8文件
+2. 判别(人工)是否需要下载第二层M3U8
+3. 提取ts文件的下载路径
+4. 下载
+5. 判别是否需要解密
+6. 如果需要解密, 拿到秘钥
+7. 解密
+8. 根据M3U8的正确顺序来合并所有的ts文件 => MP4
