@@ -1,0 +1,6 @@
+我希望. 我的每次请求都直接从selenium中获取elements
+但是, selenium又太慢, 而不是每一次请求
+都需要动态加载.
+
+# 我最终希望, 我的程序可以Request和Selenium共存
+# requests+selenium
