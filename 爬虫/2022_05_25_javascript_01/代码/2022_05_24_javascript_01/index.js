@@ -1,0 +1,1 @@
+console.log("我这里是index.js");
