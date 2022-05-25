@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /**
+        var a = 10;
+
+        a ++; // 表示自己增加1个 =>  a = a + 1
+        console.log(a); // 11
+         ++ a; // 也是表示自己增加1  =>  a = a  + 1
+        console.log(a); // 12
+         */
+
+        /**
+         * 注意, ++不论变量在前面还是在后面. 它自己一定是增加1的  a = a  + 1
+
+         * a ++ 这个表达式的值是a
+         * ++ a 这个表达式的值是a + 1
+         *
+         * = 永远最后运行
+         * */
+
+        var a = 1;
+
+        // var b = a ++; // 原来a的值赋值给b.  a自增1
+        // console.log(b);  //  1
+        // console.log(a);  //  2
+
+        // var c = ++ a;
+        // console.log(c)  // ? 2
+        // console.log(a)  // ? 2
+
+        // 以下代码, 正常的程序中是不会出现的.
+        a = a ++;  // a++结局是1    a在这个过程中会自增1
+        console.log(a);// a = 1
+        a = ++ a; // ++a的结局是2
+        console.log(a) // a = 2
+
+        // ++a. 先+, a++. 先a . 最终赋值的时候
+        // a++ 这个表达式的值是a
+        // ++a 这个表达式的值是a + 1
+
+        // 7 9
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
